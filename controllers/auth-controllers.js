@@ -20,7 +20,7 @@ async function getLogIn(req, res) {
     if (!sessionInput) {
         sessionInput = req.session.input;
     }
-    res.render("login",{csrfToken:req.csrfToken(), input: sessionInput});
+    res.render("/login",{csrfToken:req.csrfToken(), input: sessionInput});
 }
 
 
